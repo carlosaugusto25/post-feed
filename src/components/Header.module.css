@@ -1,5 +1,16 @@
 .header {
-    background-color: #333;
-    height: 80px;
-    color: white;
+    background-color: var(--gray-800);
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    padding: 1.25rem 0;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.icon {
+    color: var(--red-100);
+    font-size: 2rem;
 }

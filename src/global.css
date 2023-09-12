@@ -24,8 +24,7 @@ body {
     -webkit-font-smoothing: antialiased; /*configuração para as fontes ficarem com detalhes mais sutis */
 }
 
-body, input, textarea, button {
+body, input, textarea, button, strong, p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    
 }
