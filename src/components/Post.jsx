@@ -1,3 +1,5 @@
+import { Avatar } from './Avatar';
+import { Comment } from './Comment';
 import styles from './Post.module.css';
 
 export function Post() {
@@ -5,10 +7,10 @@ export function Post() {
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img className={styles.avatar} src={'https://avatars.githubusercontent.com/u/65244119?v=4'} alt="Avatar do usuário" />
+                    <Avatar src={'https://avatars.githubusercontent.com/u/1467125?v=4'} />
                     <div className={styles.authorInfo}>
-                        <strong>Carlos Augusto</strong>
-                        <span>Dev Front-End Jr.</span>
+                        <strong>Albert Dias</strong>
+                        <span>Dev Front-End Senior</span>
                     </div>
                 </div>
 
@@ -28,6 +30,23 @@ export function Post() {
                     <p><a href='#'>#rocketseat</a></p>
                 </div>
             </div>
+
+            <form className={styles.formComent}>
+                <strong>Deixe seu feedback</strong>
+
+                <textarea placeholder='Deixe seu comentário' />
+
+                <footer>
+                    <button type="submit">Publicar</button>
+                </footer>
+            </form>
+
+            <div className={styles.commentList}>
+                <Comment hasBorder={false} src={'https://avatars.githubusercontent.com/u/20101892?v=4'} />
+                <Comment hasBorder={false} src={'https://avatars.githubusercontent.com/u/2254731?v=4'} />
+                <Comment hasBorder={false} src={'https://avatars.githubusercontent.com/u/21209082?v=4'} />
+            </div>
+            
         </article>
     )
 }
